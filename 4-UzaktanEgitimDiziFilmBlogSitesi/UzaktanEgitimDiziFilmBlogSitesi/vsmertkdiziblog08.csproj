@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{411163A3-F991-43BF-9DFD-81B2C7597698}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UzaktanEgitimDiziFilmBlogSitesi</RootNamespace>
+    <AssemblyName>UzaktanEgitimDiziFilmBlogSitesi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CollectionPager">
+      <HintPath>..\..\..\CollectionPager.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminSayfalar\AdminDefault.aspx" />
+    <Content Include="AdminSayfalar\AdminHakkımda.aspx" />
+    <Content Include="AdminSayfalar\AdminMesajlar.aspx" />
+    <Content Include="AdminSayfalar\AdminYorumlar.aspx" />
+    <Content Include="AdminSayfalar\BlogGuncelle.aspx" />
+    <Content Include="AdminSayfalar\BlogSil.aspx" />
+    <Content Include="AdminSayfalar\Hakkımda.aspx" />
+    <Content Include="AdminSayfalar\MesajSil.aspx" />
+    <Content Include="AdminSayfalar\Yorumlar.aspx" />
+    <Content Include="AdminSayfalar\İletişimAdmin.aspx" />
+    <Content Include="AdminSayfalar\YeniBlog.aspx" />
+    <Content Include="AdminSayfalar\YorumSil.aspx" />
+    <Content Include="AdminSayfalar\ŞifreGüncelle.aspx" />
+    <Content Include="AdminTema\dist\401.html" />
+    <Content Include="AdminTema\dist\404.html" />
+    <Content Include="AdminTema\dist\500.html" />
+    <Content Include="AdminTema\dist\assets\demo\chart-area-demo.js" />
+    <Content Include="AdminTema\dist\assets\demo\chart-bar-demo.js" />
+    <Content Include="AdminTema\dist\assets\demo\chart-pie-demo.js" />
+    <Content Include="AdminTema\dist\assets\demo\datatables-demo.js" />
+    <Content Include="AdminTema\dist\assets\img\error-404-monochrome.svg" />
+    <Content Include="AdminTema\dist\charts.html" />
+    <Content Include="AdminTema\dist\css\styles.css" />
+    <Content Include="AdminTema\dist\index.html" />
+    <Content Include="AdminTema\dist\js\scripts.js" />
+    <Content Include="AdminTema\dist\layout-sidenav-light.html" />
+    <Content Include="AdminTema\dist\layout-static.html" />
+    <Content Include="AdminTema\dist\login.html" />
+    <Content Include="AdminTema\dist\password.html" />
+    <Content Include="AdminTema\dist\register.html" />
+    <Content Include="AdminTema\dist\tables.html" />
+    <Content Include="AdminTema\index.html" />
+    <Content Include="AdminTema\scripts\build-assets.js" />
+    <Content Include="AdminTema\scripts\build-pug.js" />
+    <Content Include="AdminTema\scripts\build-scripts.js" />
+    <Content Include="AdminTema\scripts\build-scss.js" />
+    <Content Include="AdminTema\scripts\clean.js" />
+    <Content Include="AdminTema\scripts\render-assets.js" />
+    <Content Include="AdminTema\scripts\render-pug.js" />
+    <Content Include="AdminTema\scripts\render-scripts.js" />
+    <Content Include="AdminTema\scripts\render-scss.js" />
+    <Content Include="AdminTema\scripts\sb-watch.js" />
+    <Content Include="AdminTema\scripts\start-debug.js" />
+    <Content Include="AdminTema\scripts\start.js" />
+    <Content Include="AdminTema\src\assets\demo\chart-area-demo.js" />
+    <Content Include="AdminTema\src\assets\demo\chart-bar-demo.js" />
+    <Content Include="AdminTema\src\assets\demo\chart-pie-demo.js" />
+    <Content Include="AdminTema\src\assets\demo\datatables-demo.js" />
+    <Content Include="AdminTema\src\assets\img\error-404-monochrome.svg" />
+    <Content Include="AdminTema\src\js\scripts.js" />
+    <Content Include="BlogDetay.aspx" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="KategoriDetay.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProfilGüncelle.aspx" />
+    <Content Include="YeniÜye.aspx" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="AdminSayfalar\AdminMaster.Master" />
+    <Content Include="AdminTema\.browserslistrc" />
+    <Content Include="AdminTema\.gitignore" />
+    <Content Include="AdminTema\.travis.yml" />
+    <Content Include="AdminTema\LICENSE" />
+    <Content Include="AdminTema\package-lock.json" />
+    <Content Include="AdminTema\package.json" />
+    <Content Include="AdminTema\README.md" />
+    <Content Include="AdminTema\src\pug\layouts\authentication.pug" />
+    <Content Include="AdminTema\src\pug\layouts\dashboard.pug" />
+    <Content Include="AdminTema\src\pug\layouts\error.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\footer.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\head\css.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\head\icons.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\head\meta.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\head\title.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\navigation\sidenav.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\navigation\topnav.pug" />
+    <Content Include="AdminTema\src\pug\layouts\includes\scripts.pug" />
+    <Content Include="AdminTema\src\pug\pages\401.pug" />
+    <Content Include="AdminTema\src\pug\pages\404.pug" />
+    <Content Include="AdminTema\src\pug\pages\500.pug" />
+    <Content Include="AdminTema\src\pug\pages\charts.pug" />
+    <Content Include="AdminTema\src\pug\pages\includes\datatable.pug" />
+    <Content Include="AdminTema\src\pug\pages\includes\page-header.pug" />
+    <Content Include="AdminTema\src\pug\pages\index.pug" />
+    <Content Include="AdminTema\src\pug\pages\layout-sidenav-light.pug" />
+    <Content Include="AdminTema\src\pug\pages\layout-static.pug" />
+    <Content Include="AdminTema\src\pug\pages\login.pug" />
+    <Content Include="AdminTema\src\pug\pages\password.pug" />
+    <Content Include="AdminTema\src\pug\pages\register.pug" />
+    <Content Include="AdminTema\src\pug\pages\tables.pug" />
+    <Content Include="AdminTema\src\scss\layout\_authentication.scss" />
+    <Content Include="AdminTema\src\scss\layout\_dashboard-default.scss" />
+    <Content Include="AdminTema\src\scss\layout\_dashboard-fixed.scss" />
+    <Content Include="AdminTema\src\scss\layout\_error.scss" />
+    <Content Include="AdminTema\src\scss\navigation\sidenav\_sidenav-dark.scss" />
+    <Content Include="AdminTema\src\scss\navigation\sidenav\_sidenav-light.scss" />
+    <Content Include="AdminTema\src\scss\navigation\sidenav\_sidenav.scss" />
+    <Content Include="AdminTema\src\scss\navigation\_nav.scss" />
+    <Content Include="AdminTema\src\scss\navigation\_topnav.scss" />
+    <Content Include="AdminTema\src\scss\styles.scss" />
+    <Content Include="AdminTema\src\scss\variables\_navigation.scss" />
+    <Content Include="AdminTema\src\scss\variables\_spacing.scss" />
+    <Content Include="AdminTema\src\scss\_global.scss" />
+    <Content Include="AdminTema\src\scss\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Hakkimda.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSayfalar\AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminHakkımda.aspx.cs">
+      <DependentUpon>AdminHakkımda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminHakkımda.aspx.designer.cs">
+      <DependentUpon>AdminHakkımda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminMesajlar.aspx.cs">
+      <DependentUpon>AdminMesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminMesajlar.aspx.designer.cs">
+      <DependentUpon>AdminMesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminYorumlar.aspx.cs">
+      <DependentUpon>AdminYorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\AdminYorumlar.aspx.designer.cs">
+      <DependentUpon>AdminYorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\BlogGuncelle.aspx.cs">
+      <DependentUpon>BlogGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\BlogGuncelle.aspx.designer.cs">
+      <DependentUpon>BlogGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\BlogSil.aspx.cs">
+      <DependentUpon>BlogSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\BlogSil.aspx.designer.cs">
+      <DependentUpon>BlogSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\Hakkımda.aspx.cs">
+      <DependentUpon>Hakkımda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\Hakkımda.aspx.designer.cs">
+      <DependentUpon>Hakkımda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\MesajSil.aspx.cs">
+      <DependentUpon>MesajSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\MesajSil.aspx.designer.cs">
+      <DependentUpon>MesajSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\İletişimAdmin.aspx.cs">
+      <DependentUpon>İletişimAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\İletişimAdmin.aspx.designer.cs">
+      <DependentUpon>İletişimAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\YeniBlog.aspx.cs">
+      <DependentUpon>YeniBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\YeniBlog.aspx.designer.cs">
+      <DependentUpon>YeniBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\YorumSil.aspx.cs">
+      <DependentUpon>YorumSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\YorumSil.aspx.designer.cs">
+      <DependentUpon>YorumSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\ŞifreGüncelle.aspx.cs">
+      <DependentUpon>ŞifreGüncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\ŞifreGüncelle.aspx.designer.cs">
+      <DependentUpon>ŞifreGüncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlogDetay.aspx.cs">
+      <DependentUpon>BlogDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogDetay.aspx.designer.cs">
+      <DependentUpon>BlogDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.designer.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilGüncelle.aspx.cs">
+      <DependentUpon>ProfilGüncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfilGüncelle.aspx.designer.cs">
+      <DependentUpon>ProfilGüncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimda.aspx.cs">
+      <DependentUpon>Hakkimda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimda.aspx.designer.cs">
+      <DependentUpon>Hakkimda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLBLOG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHAKKIMDA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKATEGORILER.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKULLANICI.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLMESAJLAR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLYORUMLAR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YeniÜye.aspx.cs">
+      <DependentUpon>YeniÜye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YeniÜye.aspx.designer.cs">
+      <DependentUpon>YeniÜye.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="web1\" />
+    <Folder Include="YüklenenResimler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54559</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54559/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

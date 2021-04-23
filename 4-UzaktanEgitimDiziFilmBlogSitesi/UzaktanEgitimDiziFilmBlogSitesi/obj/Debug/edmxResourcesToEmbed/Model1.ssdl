@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UzaktanEgitimDiziFilmBlogSitesiASPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TBLBLOG">
+    <Key>
+      <PropertyRef Name="BLOGID" />
+    </Key>
+    <Property Name="BLOGID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BLOGBASLIK" Type="varchar" MaxLength="50" />
+    <Property Name="BLOGICERIK" Type="varchar(max)" />
+    <Property Name="BLOGTARIH" Type="smalldatetime" />
+    <Property Name="BLOGGORSEL" Type="varchar" MaxLength="500" />
+    <Property Name="BLOGKATEGORI" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLHAKKIMDA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HAKKIMDA" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TBLKATEGORILER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KATEGORIADI" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLKULLANICI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KULLANICIADI" Type="varchar" MaxLength="200" />
+    <Property Name="SIFRE" Type="varchar" MaxLength="200" />
+    <Property Name="ADRES" Type="varchar" MaxLength="50" />
+    <Property Name="AD" Type="varchar" MaxLength="50" />
+    <Property Name="SOYAD" Type="varchar" MaxLength="50" />
+    <Property Name="TEL" Type="varchar" MaxLength="50" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="YETKI" Type="char" MaxLength="1" />
+    <Property Name="Resim" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TBLMESAJLAR">
+    <Key>
+      <PropertyRef Name="İd" />
+    </Key>
+    <Property Name="İd" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="TEL" Type="varchar" MaxLength="50" />
+    <Property Name="Sehır" Type="varchar" MaxLength="13" />
+    <Property Name="Mesaj" Type="varchar" MaxLength="500" />
+    <Property Name="ISIM" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLYORUMLAR">
+    <Key>
+      <PropertyRef Name="YORUMID" />
+    </Key>
+    <Property Name="YORUMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KULLANICIADI" Type="varchar" MaxLength="50" />
+    <Property Name="KULLANICIMAIL" Type="varchar" MaxLength="50" />
+    <Property Name="YORUMICERIK" Type="varchar(max)" />
+    <Property Name="YORUMBLOG" Type="int" />
+  </EntityType>
+  <Association Name="FK_TBLBLOG_TBLKATEGORILER">
+    <End Role="TBLKATEGORILER" Type="Self.TBLKATEGORILER" Multiplicity="0..1" />
+    <End Role="TBLBLOG" Type="Self.TBLBLOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLKATEGORILER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBLBLOG">
+        <PropertyRef Name="BLOGKATEGORI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBLYORUMLAR_TBLBLOG">
+    <End Role="TBLBLOG" Type="Self.TBLBLOG" Multiplicity="0..1" />
+    <End Role="TBLYORUMLAR" Type="Self.TBLYORUMLAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLBLOG">
+        <PropertyRef Name="BLOGID" />
+      </Principal>
+      <Dependent Role="TBLYORUMLAR">
+        <PropertyRef Name="YORUMBLOG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UzaktanEgitimDiziFilmBlogSitesiASPModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBLOG" EntityType="Self.TBLBLOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKKIMDA" EntityType="Self.TBLHAKKIMDA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLKATEGORILER" EntityType="Self.TBLKATEGORILER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLKULLANICI" EntityType="Self.TBLKULLANICI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMESAJLAR" EntityType="Self.TBLMESAJLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLYORUMLAR" EntityType="Self.TBLYORUMLAR" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBLBLOG_TBLKATEGORILER" Association="Self.FK_TBLBLOG_TBLKATEGORILER">
+      <End Role="TBLKATEGORILER" EntitySet="TBLKATEGORILER" />
+      <End Role="TBLBLOG" EntitySet="TBLBLOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBLYORUMLAR_TBLBLOG" Association="Self.FK_TBLYORUMLAR_TBLBLOG">
+      <End Role="TBLBLOG" EntitySet="TBLBLOG" />
+      <End Role="TBLYORUMLAR" EntitySet="TBLYORUMLAR" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

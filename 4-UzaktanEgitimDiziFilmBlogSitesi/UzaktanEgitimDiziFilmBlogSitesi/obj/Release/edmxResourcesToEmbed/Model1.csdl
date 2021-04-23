@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UzaktanEgitimDiziFilmBlogSitesiASPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBLBLOG">
+    <Key>
+      <PropertyRef Name="BLOGID" />
+    </Key>
+    <Property Name="BLOGID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BLOGBASLIK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BLOGICERIK" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BLOGTARIH" Type="DateTime" Precision="0" />
+    <Property Name="BLOGGORSEL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="BLOGKATEGORI" Type="Int32" />
+    <NavigationProperty Name="TBLKATEGORILER" Relationship="Self.FK_TBLBLOG_TBLKATEGORILER" FromRole="TBLBLOG" ToRole="TBLKATEGORILER" />
+    <NavigationProperty Name="TBLYORUMLAR" Relationship="Self.FK_TBLYORUMLAR_TBLBLOG" FromRole="TBLBLOG" ToRole="TBLYORUMLAR" />
+  </EntityType>
+  <EntityType Name="TBLHAKKIMDA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HAKKIMDA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLKATEGORILER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KATEGORIADI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBLBLOG" Relationship="Self.FK_TBLBLOG_TBLKATEGORILER" FromRole="TBLKATEGORILER" ToRole="TBLBLOG" />
+  </EntityType>
+  <EntityType Name="TBLYORUMLAR">
+    <Key>
+      <PropertyRef Name="YORUMID" />
+    </Key>
+    <Property Name="YORUMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KULLANICIADI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KULLANICIMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="YORUMICERIK" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="YORUMBLOG" Type="Int32" />
+    <NavigationProperty Name="TBLBLOG" Relationship="Self.FK_TBLYORUMLAR_TBLBLOG" FromRole="TBLYORUMLAR" ToRole="TBLBLOG" />
+  </EntityType>
+  <Association Name="FK_TBLBLOG_TBLKATEGORILER">
+    <End Role="TBLKATEGORILER" Type="Self.TBLKATEGORILER" Multiplicity="0..1" />
+    <End Role="TBLBLOG" Type="Self.TBLBLOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLKATEGORILER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBLBLOG">
+        <PropertyRef Name="BLOGKATEGORI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBLYORUMLAR_TBLBLOG">
+    <End Role="TBLBLOG" Type="Self.TBLBLOG" Multiplicity="0..1" />
+    <End Role="TBLYORUMLAR" Type="Self.TBLYORUMLAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLBLOG">
+        <PropertyRef Name="BLOGID" />
+      </Principal>
+      <Dependent Role="TBLYORUMLAR">
+        <PropertyRef Name="YORUMBLOG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UzaktanEgitimDiziFilmBlogSitesiASPEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TBLBLOG" EntityType="Self.TBLBLOG" />
+    <EntitySet Name="TBLHAKKIMDA" EntityType="Self.TBLHAKKIMDA" />
+    <EntitySet Name="TBLKATEGORILER" EntityType="Self.TBLKATEGORILER" />
+    <EntitySet Name="TBLYORUMLAR" EntityType="Self.TBLYORUMLAR" />
+    <AssociationSet Name="FK_TBLBLOG_TBLKATEGORILER" Association="Self.FK_TBLBLOG_TBLKATEGORILER">
+      <End Role="TBLKATEGORILER" EntitySet="TBLKATEGORILER" />
+      <End Role="TBLBLOG" EntitySet="TBLBLOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBLYORUMLAR_TBLBLOG" Association="Self.FK_TBLYORUMLAR_TBLBLOG">
+      <End Role="TBLBLOG" EntitySet="TBLBLOG" />
+      <End Role="TBLYORUMLAR" EntitySet="TBLYORUMLAR" />
+    </AssociationSet>
+    <EntitySet Name="TBLKULLANICI" EntityType="UzaktanEgitimDiziFilmBlogSitesiASPModel.TBLKULLANICI" />
+  </EntityContainer>
+  <EntityType Name="TBLKULLANICI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KULLANICIADI" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SIFRE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ADRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="YETKI" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Resim" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

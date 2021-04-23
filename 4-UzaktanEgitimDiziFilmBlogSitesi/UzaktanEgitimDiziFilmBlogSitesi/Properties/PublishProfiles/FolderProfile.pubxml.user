@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Mert Kesler\Desktop\Publisch</_PublishTargetUrl>
+    <History>True|2021-04-07T08:04:05.3710102Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AdminSayfalar/AdminDefault.aspx">
+      <publishTime>03/31/2021 10:13:51</publishTime>
+    </File>
+    <File Include="AdminSayfalar/AdminHakkımda.aspx">
+      <publishTime>03/19/2021 11:05:01</publishTime>
+    </File>
+    <File Include="AdminSayfalar/AdminMaster.Master">
+      <publishTime>04/06/2021 23:21:21</publishTime>
+    </File>
+    <File Include="AdminSayfalar/AdminMesajlar.aspx">
+      <publishTime>03/19/2021 11:05:58</publishTime>
+    </File>
+    <File Include="AdminSayfalar/AdminYorumlar.aspx">
+      <publishTime>03/19/2021 11:12:03</publishTime>
+    </File>
+    <File Include="AdminSayfalar/BlogGuncelle.aspx">
+      <publishTime>05/01/2021 11:05:51</publishTime>
+    </File>
+    <File Include="AdminSayfalar/BlogSil.aspx">
+      <publishTime>03/31/2021 21:39:22</publishTime>
+    </File>
+    <File Include="AdminSayfalar/Hakkımda.aspx">
+      <publishTime>03/30/2021 21:12:43</publishTime>
+    </File>
+    <File Include="AdminSayfalar/YeniBlog.aspx">
+      <publishTime>05/01/2021 11:21:00</publishTime>
+    </File>
+    <File Include="AdminSayfalar/Yorumlar.aspx">
+      <publishTime>03/31/2021 12:28:13</publishTime>
+    </File>
+    <File Include="AdminSayfalar/YorumSil.aspx">
+      <publishTime>03/31/2021 21:24:32</publishTime>
+    </File>
+    <File Include="AdminTema/.browserslistrc">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/.gitignore">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/.travis.yml">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/401.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/404.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/500.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/assets/demo/chart-area-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/assets/demo/chart-bar-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/assets/demo/chart-pie-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/assets/demo/datatables-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/assets/img/error-404-monochrome.svg">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/charts.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/css/styles.css">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/index.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/js/scripts.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/layout-sidenav-light.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/layout-static.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/login.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/password.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/register.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/dist/tables.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/index.html">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/LICENSE">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/package-lock.json">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/package.json">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/README.md">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/build-assets.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/build-pug.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/build-scripts.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/build-scss.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/clean.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/render-assets.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/render-pug.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/render-scripts.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/render-scss.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/sb-watch.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/start-debug.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/scripts/start.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/assets/demo/chart-area-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/assets/demo/chart-bar-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/assets/demo/chart-pie-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/assets/demo/datatables-demo.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/assets/img/error-404-monochrome.svg">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/js/scripts.js">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/authentication.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/dashboard.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/error.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/footer.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/head/css.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/head/icons.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/head/meta.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/head/title.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/navigation/sidenav.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/navigation/topnav.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/layouts/includes/scripts.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/401.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/404.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/500.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/charts.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/includes/datatable.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/includes/page-header.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/index.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/layout-sidenav-light.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/layout-static.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/login.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/password.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/register.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/pug/pages/tables.pug">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/layout/_authentication.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/layout/_dashboard-default.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/layout/_dashboard-fixed.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/layout/_error.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/navigation/sidenav/_sidenav-dark.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/navigation/sidenav/_sidenav-light.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/navigation/sidenav/_sidenav.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/navigation/_nav.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/navigation/_topnav.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/styles.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/variables/_navigation.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/variables/_spacing.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/_global.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="AdminTema/src/scss/_variables.scss">
+      <publishTime>03/18/2021 21:59:33</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>01/06/2021 13:28:16</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>01/06/2021 13:28:16</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/UzaktanEgitimDiziFilmBlogSitesi.dll">
+      <publishTime>04/07/2021 11:04:03</publishTime>
+    </File>
+    <File Include="bin/UzaktanEgitimDiziFilmBlogSitesi.pdb">
+      <publishTime>04/07/2021 11:04:03</publishTime>
+    </File>
+    <File Include="BlogDetay.aspx">
+      <publishTime>03/19/2021 12:25:29</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/07/2021 10:17:40</publishTime>
+    </File>
+    <File Include="Hakkimda.aspx">
+      <publishTime>01/08/2021 13:31:39</publishTime>
+    </File>
+    <File Include="iletisim.aspx">
+      <publishTime>03/18/2021 10:12:23</publishTime>
+    </File>
+    <File Include="KategoriDetay.aspx">
+      <publishTime>03/19/2021 10:36:03</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/07/2021 10:13:09</publishTime>
+    </File>
+    <File Include="LogOut.aspx">
+      <publishTime>04/06/2021 16:18:27</publishTime>
+    </File>
+    <File Include="Model1.edmx.diagram">
+      <publishTime>04/07/2021 10:32:41</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/06/2021 14:15:42</publishTime>
+    </File>
+    <File Include="ProfilGüncelle.aspx">
+      <publishTime>04/06/2021 23:24:22</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>01/06/2021 13:28:16</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>01/06/2021 13:28:16</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>04/07/2021 10:36:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/07/2021 10:47:17</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>01/06/2021 14:03:35</publishTime>
+    </File>
+    <File Include="YeniÜye.aspx">
+      <publishTime>04/06/2021 23:28:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
